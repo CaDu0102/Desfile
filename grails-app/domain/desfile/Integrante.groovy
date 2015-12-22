@@ -2,24 +2,21 @@ package desfile
 
 class Integrante {
 
-   // float idAltura
-   // Escola idEscola
-   // Usuario funcao_idFuncao
-   // Usuario idUsuario
     float peso
     int sapato
 
+
+            //Relaçao de N pra 1 de () Integrante - Usuario
     static belongsTo = Usuario
 
+            //Relaçao de N pra 1 de () Integrante - Escola
     static hasMany = [escolas:Escola]
 
-    static constraints = {
 
-       // idAltura min:1F
+    static constraints = { //restrições impostas pelos constrains
+
         peso min:1F
         sapato min:1
-       // idAltura blank: false, nullable: false
-       // idEscola blank: false, nullable: false
         peso blank: false, nullable: false
         sapato blank: false, nullable: false
 

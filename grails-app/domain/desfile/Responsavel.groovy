@@ -2,20 +2,17 @@ package desfile
 
 class Responsavel {
 
-   // int idMatricula
     Escola idEscola
-    //Usuario funcao_idFuncao
-    //Usuario idUsuario
     Date inicioPeriodo
     Date terminoPeriodo
 
+             //Relaçao de N pra 1 de () Responsavel - Usuario
     static belongsTo = Usuario
+
+             //Relaçao de N pra 1 de () Responsavel - Escola
     static hasMany = [escolas:Escola]
 
-    static constraints = {
-
-       // idMatricula min:1
-       // idMatricula blank: false, nullable: false
+    static constraints = { //restrições impostas pelos constrains
 
     }
 }

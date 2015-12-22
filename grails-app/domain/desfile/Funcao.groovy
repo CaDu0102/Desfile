@@ -2,15 +2,14 @@ package desfile
 
 class Funcao {
 
-    //int idFuncao
     String descricao
 
+        //Relaçao de N pra 1 de () Usuario - Funcao
     static belongsTo = Usuario
 
-    static constraints = {
-        descricao maxSize:255
-       // idFuncao min:1
-       // idFuncao blank: false, nullable: false
-        descricao blank: false, nullable: false
+    static constraints = { //restrições impostas pelos constrains
+
+        descricao maxSize:255                       //A quantidade maxima de caracteres é 255
+        descricao blank: false, nullable: false     //Não recebe valor nulo e nao pode ficar em branco
     }
 }

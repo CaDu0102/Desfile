@@ -2,20 +2,16 @@ package desfile
 
 class Pontuacao {
 
-    //int idPontuacao
-    //Escola escola_idEscola
-    //Carnaval carnaval_idCarnaval
     int posicao
     int valor
 
+        //Relaçao de N pra 1 de () Pontuacao - Carnaval
     static hasMany = [carnavais:Carnaval]
 
-    static constraints = {
+    static constraints = { //restrições impostas pelos constrains
 
-        //idPontuacao min:1
         posicao min:1
         valor min:1
-        //idPontuacao blank: false, nullable: false
         posicao blank: false, nullable: false
         valor blank: false, nullable: false
 

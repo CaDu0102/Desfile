@@ -2,23 +2,22 @@ package desfile
 
 class Carnaval {
 
-   // int idCarnaval
     Uf uf
     int ano
 
+            //Relaçao de N pra 1 de () Carnaval - Pontuacao
     static belongsTo = Pontuacao
 
-    static constraints = {
+    static constraints = {      //restrições impostas pelos constrains
 
-       // idCarnaval min:1
-        ano min:1
-       // idCarnaval blank: false, nullable: false
+        ano min:1       //O valor minimo de entrada para o ano é 1
         ano blank: false, nullable: false
 
     }
 }
+        // enum - predetermina as entradas de acordo com a lista fornecida
 
-enum Uf {
+enum Uf { // Siglas de Unidades Federativas
     AC, AL, AP, AM, BA, CE, DF, ES,
     GO, MA, MT, MS, MG, PR, PB, PA,
     PE, PI, RJ, RN, RS, RO, RR, SC,
