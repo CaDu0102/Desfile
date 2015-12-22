@@ -1,4 +1,4 @@
-
+<!-- //Criado gsp para logar -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,6 +26,8 @@
             </g:eachError>
         </ul>
     </g:hasErrors>
+
+        <!-- //Botão de Logar -->
     <g:form url="[resource:usuarioInstance, action:'logar']" >
         <fieldset class="form">
             <g:render template="formLogin"/>

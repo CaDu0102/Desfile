@@ -1,4 +1,4 @@
-
+<!-- //Criado pelo Scafolding Estatic -->
 <%@ page import="desfile.Funcao" %>
 <!DOCTYPE html>
 <html>

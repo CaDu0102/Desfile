@@ -1,5 +1,10 @@
+<!-- //Criado novo form para logar -->
 <%@ page import="desfile.Usuario" %>
 
+<!-- //Era só necessário ter os campos de Login e Senha na paginda-->
+
+
+<!-- //Login -->
 <div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'login', 'error')} required">
     <label for="login">
         <g:message code="usuario.login.label" default="Login" />
@@ -9,6 +14,7 @@
 
 </div>
 
+<!-- //Senha -->
 <div class="fieldcontain ${hasErrors(bean: usuarioInstance, field: 'senha', 'error')} required">
     <label for="senha">
         <g:message code="usuario.senha.label" default="Senha" />

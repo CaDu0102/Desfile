@@ -1,3 +1,4 @@
+<!-- //Criado pelo Scafolding Estatic -->
 <!DOCTYPE html>
 <html>
 	<head>
