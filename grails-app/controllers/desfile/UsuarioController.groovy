@@ -1,5 +1,6 @@
 package desfile
 
+//Criado pelo Scafolding Estatico
 
 
 import static org.springframework.http.HttpStatus.*
@@ -34,7 +35,7 @@ class UsuarioController {
             respond usuarioInstance.errors, view:'create'
             return
         }
-        usuarioInstance.senha =  usuarioInstance.senha.encodeAsMD5()
+        usuarioInstance.senha =  usuarioInstance.senha.encodeAsMD5() // salvando  senha com  criptografia MD5
         usuarioInstance.save flush:true
 
         request.withFormat {
@@ -73,25 +74,24 @@ class UsuarioController {
         }
     }
 
-    def paginaLogin(){
+    def paginaLogin(){          //pagina que chama o logar
         render(view: 'logar')
 
     }
     def logar(Usuario usuarioInstance){
-
+                                                                         // Logando com  criptografia MD5 na senha
         def usuario = Usuario.findByLoginAndSenha(usuarioInstance.login,usuarioInstance.senha.encodeAsMD5())
         if(usuario){
-           // usuario.senha =  usuarioInstance.senha.encodeAsMD5()
-            session.usuario = usuario
-            render(view: '/index')
+            session.usuario = usuario // abrindo sessao quando o usuario consegue logar
+            render(view: '/index')    //consegue ir para index
         }else{
-            render(view: 'logar')
+            render(view: 'logar')     //volta para a mesma paginda de logar
         }
 
     }
     def sair(){
-        session.usuario = null
-        render(view: 'logar')
+        session.usuario = null        //Encerra a sessão
+        render(view: 'logar')         //Mostra a paginda de logar novamente
     }
 
 
