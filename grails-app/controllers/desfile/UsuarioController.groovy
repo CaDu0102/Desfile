@@ -78,6 +78,12 @@ class UsuarioController {
         render(view: 'logar')
 
     }
+    //def usuarioInstance (){
+    //   usuarioInstance.login = 'z'
+    //   usuarioInstance.senha = '1'
+    //}
+
+
     def logar(Usuario usuarioInstance){
                                                                          // Logando com  criptografia MD5 na senha
         def usuario = Usuario.findByLoginAndSenha(usuarioInstance.login,usuarioInstance.senha.encodeAsMD5())

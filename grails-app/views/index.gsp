@@ -1,4 +1,4 @@
-<!-- //Criado pelo Scafolding Estatic -->
+<!-- //Criado pelo Scafolding Estatic  e Editado-->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -104,9 +104,9 @@
 			</ul>
 		</div>
 		<div id="page-body" role="main">
-			<h1>Sociedade de Fotografia(${session.usuario?.login})</h1>
-            <g:link controller="usuario" action="sair">Sair!</g:link>
-			<p>Programando um Software para atuar no controle de um Curso de Fotografia</p>
+			<h1>Sociedade de Fotografia(${session.usuario?.login})</h1> <!-- //Mostra o nome do usuario -->
+            <g:link controller="usuario" action="sair">Sair!</g:link> <!-- //botao de logoff -->
+			<p>Programando um Software para Escolas de Samba</p>
             <div class="col-md-5">
 
             </div>

@@ -1,3 +1,9 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: CaDu
+  Date: 22/12/2015
+  Time: 14:08
+--%>
 <!-- //Criado gsp para logar -->
 <!DOCTYPE html>
 <html>
@@ -27,10 +33,10 @@
         </ul>
     </g:hasErrors>
 
-        <!-- //Botão de Logar -->
+<!-- //Botão de Logar -->
     <g:form url="[resource:usuarioInstance, action:'logar']" >
         <fieldset class="form">
-            <g:render template="formLogin"/> <!-- //Usando o novo form para fazer login -->
+            <g:render template="formLogin2"/> <!-- //Usando o novo form para fazer login -->
         </fieldset>
         <fieldset class="buttons">
             <g:submitButton name="Logar" class="save" value="Logar" />
