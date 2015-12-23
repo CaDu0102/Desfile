@@ -8,6 +8,10 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class EscolaController {
 
+    def buscaEscolaService
+
+
+
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
@@ -21,6 +25,17 @@ class EscolaController {
 
     def create() {
         respond new Escola(params)
+    }
+
+          // Controle de Buscas
+    def telaBuscar (){
+        render (view: 'busca')
+    }
+
+    //buscas
+    def busca (Escola buscado){
+       // buscaEscolaService.buscaEscolas(buscado.nome)
+        render (view: 'buscaEscolas')
     }
 
     @Transactional

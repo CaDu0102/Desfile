@@ -20,7 +20,7 @@
         <g:message code="usuario.senha.label" default="Senha" />
         <span class="required-indicator">*</span>
     </label>
-    <g:passwordField name="senha" maxlength="45" required="" value="${usuarioInstance?.senha}"/>
+    <g:passwordField name="senha" maxlength="45" required="" value="${usuarioInstance?.senha}"/> <!-- //Criado gsp para logar -->
 
 </div>
 

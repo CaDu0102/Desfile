@@ -78,12 +78,8 @@ class UsuarioController {
         render(view: 'logar')
 
     }
-    //def usuarioInstance (){
-    //   usuarioInstance.login = 'z'
-    //   usuarioInstance.senha = '1'
-    //}
 
-
+                         // Controle de Logar
     def logar(Usuario usuarioInstance){
                                                                          // Logando com  criptografia MD5 na senha
         def usuario = Usuario.findByLoginAndSenha(usuarioInstance.login,usuarioInstance.senha.encodeAsMD5())
@@ -91,6 +87,7 @@ class UsuarioController {
             session.usuario = usuario // abrindo sessao quando o usuario consegue logar
             render(view: '/index')    //consegue ir para index
         }else{
+            flash.error="senha/login imcompativeis ou invalidas"
             render(view: 'logar')     //volta para a mesma paginda de logar
         }
 
