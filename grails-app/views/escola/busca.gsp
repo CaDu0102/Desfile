@@ -10,10 +10,10 @@
 <head>
   <title>Logar</title>
 </head>
-<body>
-        <g:form action="buscar">
+<body>                              <%--Formulario de Busca--%>
+        <g:form action="busca">
             Digite o nome: <g:textField name="nome"></g:textField>
-            <g:submitButton name="buscar"> </g:submitButton>
+            <g:submitButton name="busca"> </g:submitButton>
         </g:form>
 </body>
 </html>

@@ -34,7 +34,7 @@ class EscolaController {
 
     //buscas
     def busca (Escola buscado){
-       // buscaEscolaService.buscaEscolas(buscado.nome)
+        BuscaEscolasService.buscaEscolas(buscado.nome)
         render (view: 'buscaEscolas')
     }
 
