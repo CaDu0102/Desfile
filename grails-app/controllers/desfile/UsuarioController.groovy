@@ -88,7 +88,7 @@ class UsuarioController {
             render(view: '/index')    //consegue ir para index
         }else{
             flash.error="senha/login imcompativeis ou invalidas"
-            render(view: 'logar')     //volta para a mesma paginda de logar
+            render(view: 'logar')     //volta para a mesma paginda de logar (mudado)
         }
 
     }

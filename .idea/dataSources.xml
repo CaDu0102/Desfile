@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3591356865">
+    <data-source source="LOCAL" name="Desfile dev" uuid="f5d0c18b-e217-4609-a77b-a6c9a6d87f6e">
+      <jdbc-driver>co.mysql</jdbc-driver>
+      <jdbc-url>jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE</jdbc-url>
+      <user-name>sa</user-name>
+      <user-password>dfcedfcfdfccdfc3dfc9dfc5dfc4df9e</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

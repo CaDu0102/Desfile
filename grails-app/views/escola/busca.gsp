@@ -8,6 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
+    <meta name="layout" content="main">
+    <g:set var="entityName" value="${message(code: 'escola.label', default: 'Escola')}" />
+
   <title>Logar</title>
 </head>
 <body>                              <%--Formulario de Busca--%>
